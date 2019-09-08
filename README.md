@@ -55,7 +55,7 @@ A basic message：
 
 # Screenshots
 
-<img src="screenshots/Screenshot_1567968683.png" height="400" alt="Screenshot"/>
+<img src="screenshots/Screenshot_1567968683.png" height="400" alt="Screenshot"/> <img src="screenshots/Screenshot_1567976494.png" height="400" alt="Screenshot"/>
 
 
 # Customization
