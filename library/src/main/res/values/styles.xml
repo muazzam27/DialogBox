@@ -11,11 +11,11 @@
         <item name="android:backgroundDimAmount">0.50</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <!--<item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>-->
     </style>
 
 	<!--<style name="PauseDialogAnimation">-->
-	    <!--<item name="android:windowEnterAnimation">@anim/animate_in_top</item>-->
+	    <!--<item name="android:windowEnterAnimation">@/animate_in_top</item>-->
 	    <!--<item name="android:windowExitAnimation">@anim/animate_out_top</item>-->
 	<!--</style>-->
 

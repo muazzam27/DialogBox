@@ -3,7 +3,7 @@
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:orientation="vertical"
-              android:layout_gravity="center" >
+              android:layout_gravity="center">
 
     <LinearLayout
             android:layout_width="wrap_content"
@@ -11,22 +11,38 @@
             android:layout_margin="@dimen/size_device_20"
             android:background="@drawable/shape_rounded_light_gray"
             android:orientation="vertical"
-            android:minWidth="@dimen/size_device_240" >
+            android:minWidth="@dimen/size_device_240">
+
 
         <TextView
-                android:id="@+id/textview_error_message"
+                android:id="@+id/textview_title"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/size_device_20"
-                android:layout_marginBottom="@dimen/size_device_15"
+                android:layout_marginTop="@dimen/size_device_10"
+                android:layout_marginBottom="@dimen/size_device_5"
+                android:layout_marginLeft="@dimen/size_device_5"
+                android:layout_marginRight="@dimen/size_device_5"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:text="Title"
+                android:textSize="@dimen/text_size_large"
+                android:minHeight="@dimen/size_device_30"
+        />
+
+        <TextView
+                android:id="@+id/textview_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_device_5"
                 android:layout_marginRight="@dimen/size_device_5"
                 android:gravity="center_horizontal"
                 android:textColor="#222222"
                 android:minHeight="@dimen/size_device_30"
+                android:text="This is is test Message"
                 android:textSize="@dimen/text_size_14"/>
         <View android:layout_width="match_parent"
               android:layout_height="1dp"
+              android:id="@+id/divider_color"
               android:background="#99999999"/>
         <TextView
                 android:id="@+id/textview_popup_ok"
