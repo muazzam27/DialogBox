@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+	<style name="dialog_style_animation" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.50</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+	<!--<style name="PauseDialogAnimation">-->
+	    <!--<item name="android:windowEnterAnimation">@anim/animate_in_top</item>-->
+	    <!--<item name="android:windowExitAnimation">@anim/animate_out_top</item>-->
+	<!--</style>-->
+
+     <style name="dialog_style_simple" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.60</item>
+        <item name="android:windowFullscreen">true</item>
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
