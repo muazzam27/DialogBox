@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 /**
- * Instrumented test, which will execute on an Android device.
+ * Instrumented layout_popup_ok, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
@@ -18,9 +18,9 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        // Context of the app under test.
+        // Context of the app under layout_popup_ok.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.testapplication.library.test", appContext.getPackageName());
+        assertEquals("com.testapplication.library.layout_popup_ok", appContext.getPackageName());
     }
 }

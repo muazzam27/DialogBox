@@ -1,30 +1,31 @@
-package com.testapplication.library
+package com.testapplication.library.popups
 
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Typeface
 import android.view.View
 import android.widget.TextView
+import com.testapplication.library.R
 
 public class DialogBox : Dialog, View.OnClickListener {
 
-    lateinit var textViewOk: TextView
-    lateinit var textViewMessage: TextView
-    lateinit var textViewTitle: TextView
-    lateinit var dividerView: View
+    lateinit var mTextViewOk: TextView
+    lateinit var mTextViewMessage: TextView
+    lateinit var mTextViewTitle: TextView
+    lateinit var mDividerView: View
 
     constructor(context: Context) : super(context, R.style.dialog_style_simple) {
-        setContentView(R.layout.test)
-        textViewTitle = findViewById(R.id.textview_title)
-        textViewMessage = findViewById(R.id.textview_message)
-        textViewOk = findViewById(R.id.textview_popup_ok)
-        dividerView = findViewById(R.id.divider_color)
-        textViewOk.setOnClickListener(this)
+        setContentView(R.layout.layout_popup_ok)
+        mTextViewTitle = findViewById(R.id.textview_title)
+        mTextViewMessage = findViewById(R.id.textview_message)
+        mTextViewOk = findViewById(R.id.textview_popup_ok)
+        mDividerView = findViewById(R.id.divider_color)
+        mTextViewOk.setOnClickListener(this)
     }
 
 
     override fun onClick(p0: View?) {
-        if (p0 == textViewOk) {
+        if (p0 == mTextViewOk) {
             this.cancel()
         }
     }
@@ -33,17 +34,17 @@ public class DialogBox : Dialog, View.OnClickListener {
     Labels String assigned here
      */
     fun setTitleLabel(title: String): DialogBox {
-        textViewTitle.setText(title)
+        mTextViewTitle.setText(title)
         return this
     }
 
     fun setMessageLabel(title: String): DialogBox {
-        textViewMessage.setText(title)
+        mTextViewMessage.setText(title)
         return this
     }
 
     fun setActionLabel(title: String): DialogBox {
-        textViewOk.setText(title)
+        mTextViewOk.setText(title)
         return this
     }
 
@@ -52,17 +53,17 @@ public class DialogBox : Dialog, View.OnClickListener {
     Labels colors assigned here
      */
     fun setTitleColor(color: Int): DialogBox {
-        textViewTitle.setTextColor(color)
+        mTextViewTitle.setTextColor(color)
         return this
     }
 
     fun setMessageColor(color: Int): DialogBox {
-        textViewMessage.setTextColor(color)
+        mTextViewMessage.setTextColor(color)
         return this
     }
 
     fun setActionButtonColor(color: Int): DialogBox {
-        textViewOk.setTextColor(color)
+        mTextViewOk.setTextColor(color)
         return this
     }
 
@@ -72,17 +73,17 @@ public class DialogBox : Dialog, View.OnClickListener {
      */
 
     fun setTitleTypeFace(typeface: Typeface): DialogBox {
-        textViewTitle.typeface = typeface
+        mTextViewTitle.typeface = typeface
         return this
     }
 
     fun setMessageTypeFace(typeface: Typeface): DialogBox {
-        textViewMessage.typeface = typeface
+        mTextViewMessage.typeface = typeface
         return this
     }
 
     fun setActionTypeFace(typeface: Typeface): DialogBox {
-        textViewOk.typeface = typeface
+        mTextViewOk.typeface = typeface
         return this
     }
 
@@ -91,7 +92,7 @@ public class DialogBox : Dialog, View.OnClickListener {
      */
 
     fun setDividerColor(color: Int): DialogBox {
-        dividerView.setBackgroundColor(color)
+        mDividerView.setBackgroundColor(color)
         return this
     }
 
@@ -102,17 +103,17 @@ public class DialogBox : Dialog, View.OnClickListener {
      */
 
     fun setTitleTextSize(unit: Int,size:Float): DialogBox {
-        textViewTitle.setTextSize(unit,size)
+        mTextViewTitle.setTextSize(unit,size)
         return this
     }
 
     fun setMessageTextSize(unit: Int,size:Float): DialogBox {
-        textViewMessage.setTextSize(unit,size)
+        mTextViewMessage.setTextSize(unit,size)
         return this
     }
 
     fun setActionTextSize(unit: Int,size:Float): DialogBox {
-        textViewOk.setTextSize(unit,size)
+        mTextViewOk.setTextSize(unit,size)
         return this
     }
 

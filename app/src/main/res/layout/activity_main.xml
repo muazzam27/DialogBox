@@ -11,9 +11,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simple Ok Popup"
+            android:id="@+id/simple_popup"
             android:layout_centerHorizontal="true"
             android:onClick="showBox"
+    />
 
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popup Yes/NO"
+            android:layout_below="@+id/simple_popup"
+            android:layout_centerHorizontal="true"
+            android:onClick="showBoxYesNO"
     />
 
 </RelativeLayout>
