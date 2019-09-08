@@ -52,6 +52,44 @@ A basic message：
 
 ~~~
 
+A message with listener
+
+~~~
+
+DialogBoxWithListener(this@MainActivity)
+            .setTitleLabel("Error")
+            .setMessageLabel("This is error message")
+            .setActionOneLabel("Yes")
+            .setActionTwoLabel("No")
+            .setTitleColor(resources.getColor(R.color.vpi__background_holo_dark))
+            .setMessageColor(resources.getColor(R.color.vpi__background_holo_dark))
+            .setDividerOneColor(resources.getColor(R.color.color_grey))
+            .setDividerTwoColor(resources.getColor(R.color.color_grey))
+            .setActionButtonOneColor(resources.getColor(R.color.color_standard_blue))
+            .setActionButtonTwoColor(resources.getColor(R.color.color_standard_blue))
+            .setTitleTextSize(TypedValue.COMPLEX_UNIT_SP,18f)
+            .setMessageTextSize(TypedValue.COMPLEX_UNIT_SP,16f)
+            .setActionOneTextSize(TypedValue.COMPLEX_UNIT_SP,18f)
+            .setActionTwoTextSize(TypedValue.COMPLEX_UNIT_SP,18f)
+            .setTitleTypeFace(Typeface.createFromAsset(applicationContext.assets, "font/museosans_300.ttf"))
+            .setMessageTypeFace(Typeface.createFromAsset(applicationContext.assets, "font/museosans_300.ttf"))
+            .setActionOneTypeFace(Typeface.createFromAsset(applicationContext.assets, "font/museosans_300.ttf"))
+            .setActionTwoTypeFace(Typeface.createFromAsset(applicationContext.assets, "font/museosans_300.ttf"))
+            .setClickListener(object : IDialogClickListener {
+                override fun onYesClick(dialogBoxWithListener: DialogBoxWithListener) {
+                   Toast.makeText(this@MainActivity,"Yes tapped",Toast.LENGTH_SHORT).show()
+                    dialogBoxWithListener.dismiss()
+                }
+
+                override fun onNoClick(dialogBoxWithListener: DialogBoxWithListener) {
+                    Toast.makeText(this@MainActivity,"No tapped",Toast.LENGTH_SHORT).show()
+                    dialogBoxWithListener.dismiss()
+                }
+            }).showPopup()
+	    
+	    
+~~~
+
 
 # Screenshots
 
