@@ -3,6 +3,7 @@ package com.testapplication.example
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.testapplication.library.DialogBox
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +14,6 @@ class MainActivity : AppCompatActivity() {
 
 
     fun showBox(view:View){
-       //val box = DialogBox(this@MainActivity,"This is test message")
+        //DialogBox(this@MainActivity,"This is test message")
     }
 }

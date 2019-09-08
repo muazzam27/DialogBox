@@ -25,16 +25,19 @@ public class DialogBox : Dialog, View.OnClickListener {
         }
     }
 
-    fun setActionLabel(title: String) {
+    fun setActionLabel(title: String):Dialog {
         textViewOk.setText(title)
+        return this
     }
 
-    fun setActionButtonColor(color: Int) {
+    fun setActionButtonColor(color: Int):Dialog {
         textViewOk.setTextColor(color)
+        return this
     }
 
-    fun setMessageColor(color: Int) {
+    fun setMessageColor(color: Int):Dialog {
         textViewMessage.setTextColor(color)
+        return this
     }
 
 
