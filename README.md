@@ -1,7 +1,11 @@
 # DialogBox
 A simple library in kotlin to show popups 
 
+[![](https://jitpack.io/v/muazzam27/DialogBox.svg)](https://jitpack.io/#muazzam27/DialogBox)
+
 # Setup
+
+
 
 Step 1. Add the JitPack repository to your build file
 
@@ -14,9 +18,11 @@ Step 1. Add the JitPack repository to your build file
   
 Step 2. Add the dependency
 
+Get the latest version from here [![](https://jitpack.io/v/muazzam27/DialogBox.svg)](https://jitpack.io/#muazzam27/DialogBox)
+
 ~~~
 dependencies {
-	        implementation 'com.github.muazzam27:DialogBox:Tag'
+	        implementation 'com.github.muazzam27:DialogBox:0.3'
 	}
 ~~~
  
@@ -45,6 +51,11 @@ A basic message：
 
 
 ~~~
+
+
+# Screenshots
+
+<img src="screenshots/Screenshot_1567968683.png" height="400" alt="Screenshot"/>
 
 
 # Customization
